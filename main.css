@@ -1,0 +1,327 @@
+
+html {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+
+    background-color: beige;
+}
+
+.thed {
+    display: block;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 10%;
+
+    background-color: #f28453;
+
+/*    background-image: url('x.jpg');*/
+    z-index: 1000;
+}
+
+.thed .logo {
+    float: left;
+    height: 100%;
+    width: 25%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+/*    border: 1px darkblue solid;*/
+}
+
+.thed .ess {
+    display: none;
+}
+
+.logo h1 {
+    display: block;
+    /*height: 100%;*/
+    margin-left: 15px;
+    /*padding: 20px 14px 0px 14px;*/
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.thed .lnks {
+    float: right;
+    /*margin-right: 120px;*/
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    top: 0;
+}
+
+.lnks a {
+    display: block;
+    height: auto;
+    display: inline-block;
+    padding: 0 14px 0px 14px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.lnks a:link, .lnks a:visited {
+    text-decoration: none;
+}
+
+.lnks a:hover {
+/*    background-color: rgba(0, 0, 0, .5);*/
+    color: gold;
+    font-weight: 500;
+}
+
+.lnks a:target {
+    color: chocolate;
+    font-weight: 500;
+}
+
+.content {
+/*    margin-top: 10%;*/
+    top: 70px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.inv {
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 100%;
+/*    padding: 25px;*/
+    overflow: auto;
+}
+
+.inv .md {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    align-items: end;
+    width: calc(100% - 165px);
+    height: 85%;
+    margin-left: 0px;
+    padding: 0 15px 30px 150px;
+
+    background-image: url('lo.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+/*    border: 5px solid #15ff00;*/
+}
+
+.md h1 {
+    font-size: 75px;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 25px;
+}
+
+
+.md p {
+    font-size: 32px;
+    color: #fff;
+}
+
+.mco {
+    padding: 3.7% 2%;
+    /*box-shadow: 0 0 100px 5px #eaee13, 0 0 135px 55px #93b11000;*/
+    background-color: transparent/*rgba(255, 255, 255, 0.747);*/
+
+    
+}
+
+.mco .in-d {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.in-d .sd {
+    flex-basis: 100%;
+    display: inline-block;
+    width: 100%;
+    height: auto;/*max-content;*/
+    color: #000000;
+/*    background: rgba(0,0,0,.2);*/
+    background-color: aliceblue;/*rgb(36, 32, 32);*/
+    padding: 40px;
+    border-radius: 7px;
+    margin-left: 15px;
+
+    background-image: url('x.jpg');
+}
+
+.sd p {
+    color: black;
+    font-size: 25px;
+}
+
+.sd .pmd {
+    padding-bottom: 15px;
+    font-size: 45px;
+    text-align: left;
+}
+
+.foot {
+    background-color: /*#f28453*/transparent;
+    bottom: 0;
+    display: block;
+
+    height: 250px;
+    width: 100%;
+}
+
+.foot .nm {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+.nm img {
+    display: block;
+    height: 80%;
+}
+
+.foot .con {
+    display: block;
+    justify-content: center;
+}
+
+.con p {
+    text-align: center;
+    width: 100%;
+}
+
+.foot .x {
+    background-color: #f28453;
+}
+
+.foot .social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social a {
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #f28453;
+}
+
+.foot .copy {
+    background-color: #000000;
+    width: 100%;
+    height: 50px;
+}
+
+.copy p {
+    color:#ffffff;
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (max-width:820px) {
+    .ess {
+        display: block !important;
+        top: 0;
+        position: absolute;
+        margin: 22px 0 0 10px;
+        padding: 0px 5px 13px 5px;
+        color: #a5a5a5;
+        float: right;
+        right: 0;
+        height: 33px;
+        width: 33px;
+        text-align: center;
+        font-size: 35px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        color: #e2eddc;
+
+        font-family: arial;
+    }
+
+    .lnks {
+        opacity: 0;
+    }
+
+    .logo {
+        margin-left: 30px !important;
+        float: none !important;
+    }
+
+    .inv .md {
+        width: calc(100% - 30px);
+        padding: 0 15px 30px 15px;
+        height: 90%;
+    }
+
+    .md h1 {
+        font-size: 50px;
+    }
+
+    .md p {
+        font-size: 22px;
+    }
+
+    .sd p {
+        padding: 15px;
+    }
+
+    .sd figure {
+        padding: 0px;
+    }
+
+    .mco .in-d {
+        flex-wrap: wrap;
+    }
+
+    .in-d .sd {
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width:1120px) {
+    /*nav {
+        margin-left: 15% !important;
+        width: 70% !important;
+    }
+
+    main {
+        margin-left: 15% !important;
+        width: 70% !important;
+    }*/
+}
